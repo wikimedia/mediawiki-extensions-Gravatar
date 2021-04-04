@@ -14,7 +14,7 @@ use Skin;
 use User;
 use function in_array;
 
-class Handler implements BeforePageDisplayHook, GetPreferencesHook, MediaWikiServicesHook {
+class Handler implements BeforePageDisplayHook, GetPreferencesHook {
 	/**
 	 * @inheritDoc
 	 *
@@ -45,47 +45,5 @@ class Handler implements BeforePageDisplayHook, GetPreferencesHook, MediaWikiSer
 			'help-message' => [ 'prefs-gravatar-use-gravatar-help', 'https://automattic.com/privacy/' ],
 			'section' => 'personal/info/gravatar'
 		];
-	}
-
-	/**
-	 * @inheritDoc
-	 *
-	 * @param MediaWikiServices $services
-	 */
-	public function onMediaWikiServices( $services ) : void {
-		if ( !$services->hasService( 'MirageAvatarLookup' ) ) {
-			return;
-		}
-
-		$services->addServiceManipulator(
-			'MirageAvatarLookup',
-			static function ( $_, MediaWikiServices $services ) {
-				$ignoredSkins = $services->getConfigFactory()->makeConfig( 'Gravatar' )
-					->get( 'GravatarIgnoredSkins' );
-
-				if ( in_array( 'mirage', $ignoredSkins, true ) ) {
-					return null;
-				}
-
-				return new class( $services->getService( 'GravatarLookup' ) ) extends AvatarLookup {
-					/** @var GravatarLookup */
-					private $lookup;
-
-					/**
-					 * @param GravatarLookup $lookup
-					 */
-					public function __construct( GravatarLookup $lookup ) {
-						$this->lookup = $lookup;
-					}
-
-					/**
-					 * @inheritDoc
-					 */
-					public function getAvatarForUser( UserIdentity $user ) : string {
-						return $this->lookup->getAvatarForUser( $user );
-					}
-				};
-			}
-		);
 	}
 }

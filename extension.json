@@ -47,8 +47,7 @@
 	},
 	"Hooks": {
 		"BeforePageDisplay": "main",
-		"GetPreferences": "main",
-		"MediaWikiServices": "main"
+		"GetPreferences": "main"
 	},
 	"DefaultUserOptions": {
 		"gravatar-use-gravatar": false
