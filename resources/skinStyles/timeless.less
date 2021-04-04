@@ -1,0 +1,19 @@
+@media screen and ( max-width: 850px ) {
+	// Over-specify to increase specificity, or the avatar will not show up.
+	#user-tools#user-tools h2 {
+		background-image: @gravatar-avatar-url;
+		// The image used by timeless is 30 by 30 pixels,
+		// but square avatars will overlap the username right next to it.
+		background-size: 24px 24px;
+	}
+}
+
+@media screen and ( min-width: 851px ) {
+	// Over-specify to increase specificity, or the avatar will not show up.
+	#personal#personal h2 {
+		background-image: @gravatar-avatar-url;
+		// The image used by timeless is 30 by 30 pixels,
+		// but square avatars will overlap the indicator right next to it.
+		background-size: 24px 24px;
+	}
+}

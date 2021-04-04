@@ -1,0 +1,18 @@
+@media screen and ( max-width: 550px ) {
+	// Over-specify to increase specificity, or the avatar will not show up.
+	#p-personal-toggle#p-personal-toggle {
+		background-image: @gravatar-avatar-url;
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+}
+
+@media screen and ( min-width: 551px ) {
+	// Over-specify to increase specificity, or the avatar will not show up.
+	li#pt-anonuserpage#pt-anonuserpage,
+	li#pt-userpage#pt-userpage {
+		background-image: @gravatar-avatar-url;
+		background-size: contain;
+	}
+}

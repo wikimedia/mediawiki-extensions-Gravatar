@@ -1,0 +1,20 @@
+.ext-gravatar-avatar {
+	&,
+	&:before {
+		display: inline-block;
+		// Gravatar's defaults are a 80px avatar.
+		width: 80px;
+		height: 80px;
+	}
+
+	&:before {
+		content: '';
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	&.ext-gravatar-user-avatar:before {
+		background-image: @gravatar-avatar-url;
+	}
+}

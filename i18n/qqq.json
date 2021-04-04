@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"gravatar-desc": "{{desc|name=Gravatar|url=https://www.mediawiki.org/wiki/Extension:Gravatar}}",
+	"gravatar-extensionname": "{{name}}",
+	"prefs-gravatar": "Title of the avatar tab in [[Special:Preferences]].",
+	"prefs-gravatar-avatar-label": "Label for the preview of the users current avatar.",
+	"prefs-gravatar-use-gravatar-label": "Label for the checkbox that enables the Gravatar avatar.",
+	"prefs-gravatar-use-gravatar-help": "Help text for the checkbox that enables the Gravatar avatar.\n\n* $1 - Link to the privacy policy of the Gravatar service."
+}

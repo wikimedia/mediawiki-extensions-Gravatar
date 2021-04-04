@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"gravatar-desc": "Adds Gravatar avatars",
+	"gravatar-extensionname": "Gravatar",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Current avatar:",
+	"prefs-gravatar-use-gravatar-label": "Use my e-mail address to get a Gravatar avatar.",
+	"prefs-gravatar-use-gravatar-help": "Enabling the Gravatar avatars might expose your e-mail address and allow tracking your internet activity. Read the [$1 Gravatar privacy policy] for more information."
+}

@@ -1,0 +1,77 @@
+{
+	"name": "Gravatar",
+	"author": [
+		"Mainframe98"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Gravatar",
+	"descriptionmsg": "gravatar-desc",
+	"namemsg": "gravatar-extensionname",
+	"license-name": "MIT",
+	"requires": {
+		"MediaWiki": ">=1.35.0"
+	},
+	"MessagesDirs": {
+		"Gravatar": [
+			"i18n/"
+		]
+	},
+	"ResourceModules": {
+		"ext.Gravatar.avatar.styles": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"group": "user",
+			"class": "MediaWiki\\Extensions\\Gravatar\\ResourceLoader\\GravatarResourceLoaderModule",
+			"styles": [
+				"ext.Gravatar.avatar.styles.less"
+			],
+			"skinStyles": {
+				"vector": "skinStyles/vector.less",
+				"monobook": "skinStyles/monobook.less",
+				"timeless": "skinStyles/timeless.less"
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "Gravatar/resources"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extensions\\Gravatar\\": "src/"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extensions\\Gravatar\\Hook\\Handler"
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "main",
+		"GetPreferences": "main",
+		"MediaWikiServices": "main"
+	},
+	"DefaultUserOptions": {
+		"gravatar-use-gravatar": false
+	},
+	"ServiceWiringFiles": [
+		"src/ServiceWiring.php"
+	],
+	"ConfigRegistry": {
+		"Gravatar": "GlobalVarConfig::newInstance"
+	},
+	"config": {
+		"GravatarServer": {
+			"value": "//gravatar.com"
+		},
+		"GravatarDefaultAvatar": {
+			"value": "mp"
+		},
+		"GravatarAcceptedAvatarRating": {
+			"value": "g"
+		},
+		"GravatarIgnoredSkins": {
+			"value": []
+		}
+	},
+	"manifest_version": 2
+}
