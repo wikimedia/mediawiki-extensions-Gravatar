@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"gravatar-desc": "Lägger till Gravatar-avatarer",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Nuvarande avatar:",
+	"prefs-gravatar-use-gravatar-label": "Använd min e-postadress för att få en Gravatar-avatar.",
+	"prefs-gravatar-use-gravatar-help": "Att aktivera Gravatar-avatarer kan offentliggöra din e-postadress och låta andra spåra din internetaktivitet. Läs [$1 Gravatars integritetspolicy] för mer information."
+}

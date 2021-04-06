@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"gravatar-desc": "Fügt Gravatar-Avatare hinzu",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Aktueller Avatar:",
+	"prefs-gravatar-use-gravatar-label": "Verwende meine E-Mail-Adresse, um einen Gravatar-Avatar zu erhalten.",
+	"prefs-gravatar-use-gravatar-help": "Die Aktivierung der Gravatar-Avatare könnte deine E-Mail-Adresse offenlegen und die Verfolgung deiner Internetaktivitäten ermöglichen. Lies die [$1 Gravatar-Datenschutzrichtlinie] für weitere Informationen."
+}

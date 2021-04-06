@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"gravatar-desc": "Voegt ondersteuning voor Gravatar avatars toe",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Huidige avatar:",
+	"prefs-gravatar-use-gravatar-label": "Gebruik mijn e-mailadres om een Gravatar avatar op te halen."
+}

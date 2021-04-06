@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joseph",
+			"SaldırganSincap"
+		]
+	},
+	"gravatar-desc": "Gravatar avatarları ekler",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Şu anki avatar:",
+	"prefs-gravatar-use-gravatar-label": "Gravatar avatarı almak için e-posta adresimi kullan.",
+	"prefs-gravatar-use-gravatar-help": "Gravatar avatarlarını etkinleştirmek, e-posta adresinizi açığa çıkarabilir ve internet etkinliğinizin izlenmesine izin verebilir. Daha fazla bilgi için [$1 Gravatar gizlilik ilkesini] okuyun."
+}

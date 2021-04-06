@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardoaddad"
+		]
+	},
+	"gravatar-desc": "Adiciona avatares no Gravatar",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Avatar atual:",
+	"prefs-gravatar-use-gravatar-label": "Use meu endereço de e-mail para obter um avatar do Gravatar.",
+	"prefs-gravatar-use-gravatar-help": "Ativando os Avatares do Gravatar podem expor seu endereço de e-mail e permitir rastrear sua atividade na Internet. Leia a [$1 política de privacidade do Gravatar] para mais informações."
+}

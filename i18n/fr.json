@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Verdy p"
+		]
+	},
+	"gravatar-desc": "Ajouter des avatars de Gravatar",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Avatar actuel :",
+	"prefs-gravatar-use-gravatar-label": "Utiliser mon adresse de courriel pour obtenir un avatar de Gravatar.",
+	"prefs-gravatar-use-gravatar-help": "L’activation des avatars de Gravatar pourrait exposer votre adresse de courriel et permettre de suivre votre activité sur Internet. Lisez la [$1 politique de confidentialité de Gravatar] pour plus d’informations."
+}
