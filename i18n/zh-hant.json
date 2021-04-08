@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"gravatar-desc": "添加 Gravatar 頭像",
+	"prefs-gravatar": "頭像",
+	"prefs-gravatar-avatar-label": "目前頭像：",
+	"prefs-gravatar-use-gravatar-label": "使用我的電子郵件位址來取得 Gravatar 頭像。",
+	"prefs-gravatar-use-gravatar-help": "啟用 Gravatar 頭像可能會暴露您的電子郵件位址，並允許對您的網路活動進行追蹤。請閱讀 [$1 Gravatar 隱私方針]來獲得更多資訊。"
+}
