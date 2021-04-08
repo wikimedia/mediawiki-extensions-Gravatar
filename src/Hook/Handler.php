@@ -4,15 +4,10 @@ namespace MediaWiki\Extensions\Gravatar\Hook;
 
 use MediaWiki\Extensions\Gravatar\GravatarLookup;
 use MediaWiki\Hook\BeforePageDisplayHook;
-use MediaWiki\Hook\MediaWikiServicesHook;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
-use MediaWiki\Skins\Mirage\Avatars\AvatarLookup;
-use MediaWiki\User\UserIdentity;
 use OutputPage;
 use Skin;
 use User;
-use function in_array;
 
 class Handler implements BeforePageDisplayHook, GetPreferencesHook {
 	/**
