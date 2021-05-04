@@ -4,7 +4,7 @@ use MediaWiki\Extensions\Gravatar\GravatarLookup;
 use MediaWiki\MediaWikiServices;
 
 return [
-	'GravatarLookup' => function ( MediaWikiServices $services ) : GravatarLookup {
+	'GravatarLookup' => static function ( MediaWikiServices $services ) : GravatarLookup {
 		$config = $services->getConfigFactory()->makeConfig( 'Gravatar' );
 
 		return new GravatarLookup(
