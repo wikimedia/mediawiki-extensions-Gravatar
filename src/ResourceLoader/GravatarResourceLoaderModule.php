@@ -3,11 +3,11 @@
 namespace MediaWiki\Extensions\Gravatar\ResourceLoader;
 
 use Config;
+use CSSMin;
 use MediaWiki\Extensions\Gravatar\GravatarLookup;
 use MediaWiki\MediaWikiServices;
 use ResourceLoaderContext;
 use ResourceLoaderFileModule;
-use Wikimedia\Minify\CSSMin;
 use function array_diff_key;
 use function array_fill_keys;
 
