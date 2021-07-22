@@ -62,7 +62,7 @@ class GravatarLookup {
 	public static function getCurrentUserAvatar(
 		array $parameters = [],
 		string $content = ''
-	) : string {
+	): string {
 		$parameters['class'] = (array)( $parameters['class'] ?? [] );
 		$parameters['class'][] = 'ext-gravatar-avatar';
 		$parameters['class'][] = 'ext-gravatar-user-avatar';
@@ -86,7 +86,7 @@ class GravatarLookup {
 		UserIdentity $userIdentity,
 		array $extraParameters = [],
 		int $size = 0
-	) : string {
+	): string {
 		$class = (array)( $extraParameters['class'] ?? [] );
 		$class[] = 'ext-gravatar-avatar-image';
 
@@ -110,7 +110,7 @@ class GravatarLookup {
 	public function getAvatarForUser(
 		UserIdentity $userIdentity,
 		int $size = 0
-	) : string {
+	): string {
 		$email = $this->lookupEmailAddress( $userIdentity );
 		$url = $this->gravatarServer . 'avatar/';
 
@@ -137,7 +137,7 @@ class GravatarLookup {
 	 * @param UserIdentity $userIdentity
 	 * @return string|null
 	 */
-	private function lookupEmailAddress( UserIdentity $userIdentity ) : ?string {
+	private function lookupEmailAddress( UserIdentity $userIdentity ): ?string {
 		if ( $this->userOptionsLookup->getBoolOption( $userIdentity, 'gravatar-use-gravatar' ) ) {
 			$email = $this->userFactory->newFromUserIdentity( $userIdentity )->getEmail();
 

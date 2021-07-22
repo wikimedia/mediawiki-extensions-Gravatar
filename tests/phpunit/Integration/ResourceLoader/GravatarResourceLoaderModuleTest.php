@@ -12,7 +12,7 @@ class GravatarResourceLoaderModuleTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @covers \MediaWiki\Extensions\Gravatar\ResourceLoader\GravatarResourceLoaderModule::getLessVars
 	 */
-	public function testGetLessVars() : void {
+	public function testGetLessVars(): void {
 		$lookup = $this->createMock( GravatarLookup::class );
 		$lookup->method( 'getAvatarForUser' )->willReturn(
 			'//avatarprovider.com/avatarpath'
@@ -37,7 +37,7 @@ class GravatarResourceLoaderModuleTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @covers \MediaWiki\Extensions\Gravatar\ResourceLoader\GravatarResourceLoaderModule::getDefinitionSummary
 	 */
-	public function testGetDefinitionSummary() : void {
+	public function testGetDefinitionSummary(): void {
 		$lookup = $this->createMock( GravatarLookup::class );
 		$lookup->method( 'getAvatarForUser' )->willReturn(
 			'//avatarprovider.com/avatarpath'

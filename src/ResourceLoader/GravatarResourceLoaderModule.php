@@ -52,7 +52,7 @@ class GravatarResourceLoaderModule extends ResourceLoaderFileModule {
 	 * When making changes here, don't forget to update variables-sample-file.less to keep IDE
 	 * support in sync with ResourceLoader!
 	 */
-	public function getLessVars( ResourceLoaderContext $context ) : array {
+	public function getLessVars( ResourceLoaderContext $context ): array {
 		$avatarUrl = CSSMin::buildUrlValue(
 			$this->gravatarLookup->getAvatarForUser( $context->getUserObj() )
 		);
@@ -65,7 +65,7 @@ class GravatarResourceLoaderModule extends ResourceLoaderFileModule {
 	/**
 	 * @inheritDoc
 	 */
-	public function getDefinitionSummary( ResourceLoaderContext $context ) : array {
+	public function getDefinitionSummary( ResourceLoaderContext $context ): array {
 		$summary = parent::getDefinitionSummary( $context );
 
 		$summary[] = [

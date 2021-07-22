@@ -16,7 +16,7 @@ class Handler implements BeforePageDisplayHook, GetPreferencesHook {
 	 * @param OutputPage $out
 	 * @param Skin $skin
 	 */
-	public function onBeforePageDisplay( $out, $skin ) : void {
+	public function onBeforePageDisplay( $out, $skin ): void {
 		$out->addModuleStyles( 'ext.Gravatar.avatar.styles' );
 	}
 
@@ -26,7 +26,7 @@ class Handler implements BeforePageDisplayHook, GetPreferencesHook {
 	 * @param User $user
 	 * @param array &$preferences
 	 */
-	public function onGetPreferences( $user, &$preferences ) : void {
+	public function onGetPreferences( $user, &$preferences ): void {
 		$preferences['gravatar-avatar'] = [
 			'type' => 'info',
 			'raw' => true,

@@ -14,7 +14,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	/**
 	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getCurrentUserAvatar
 	 */
-	public function testGetCurrentUserAvatar() : void {
+	public function testGetCurrentUserAvatar(): void {
 		static::assertSame(
 			'<div id="id" class="testclass ext-gravatar-avatar ext-gravatar-user-avatar">Content</div>',
 			GravatarLookup::getCurrentUserAvatar(
@@ -24,7 +24,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 		);
 	}
 
-	private function getLookup( bool $optedIn, string $email ) : GravatarLookup {
+	private function getLookup( bool $optedIn, string $email ): GravatarLookup {
 		$user = $this->createMock( User::class );
 		$user->method( 'getEmail' )->willReturn( $email );
 
@@ -46,7 +46,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getImgAvatar
 	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getAvatarForUser
 	 */
-	public function testGetImgAvatar() : void {
+	public function testGetImgAvatar(): void {
 		$lookup = $this->getLookup( true, '' );
 
 		static::assertSame(
@@ -59,7 +59,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getImgAvatar
 	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getAvatarForUser
 	 */
-	public function testGetImgAvatarWithAltAndClass() : void {
+	public function testGetImgAvatarWithAltAndClass(): void {
 		$lookup = $this->getLookup( true, '' );
 
 		static::assertSame(
@@ -81,7 +81,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	 *
 	 * @param string $email
 	 */
-	public function testGetAvatarForUser( string $email ) : void {
+	public function testGetAvatarForUser( string $email ): void {
 		$lookup = $this->getLookup( true, $email );
 
 		static::assertSame(
@@ -95,7 +95,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	 *
 	 * @return string[][]
 	 */
-	public function provideEmails() : array {
+	public function provideEmails(): array {
 		return [
 			'Uppercase email' => [ 'TEST@TEST.COM' ],
 			'Email with trailing whitespace' => [ 'test@test.com     ' ],
@@ -106,7 +106,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	/**
 	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getAvatarForUser
 	 */
-	public function testGetAvatarForUserWithSize() : void {
+	public function testGetAvatarForUserWithSize(): void {
 		$lookup = $this->getLookup( true, '' );
 
 		static::assertSame(
@@ -128,7 +128,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 		bool $optedIn,
 		bool $hasEmail,
 		?string $expected
-	) : void {
+	): void {
 		$lookup = TestingAccessWrapper::newFromObject( $this->getLookup( $optedIn, $hasEmail ? 'test@test.com' : '' ) );
 
 		static::assertSame(
@@ -142,7 +142,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	 *
 	 * @return array[]
 	 */
-	public function provideEmailAndPreferences() : array {
+	public function provideEmailAndPreferences(): array {
 		return [
 			'Not opted-in, has email' => [ false, true, null ],
 			'Opted-in, no email' => [ true, false, null ],
