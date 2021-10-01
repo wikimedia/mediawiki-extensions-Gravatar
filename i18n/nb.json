@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"gravatar-desc": "Legger til Gravatar-avatarer",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Nåværende avatar:",
+	"prefs-gravatar-use-gravatar-label": "Bruke e-postadressa mi for å hente en Gravatar-avatar.",
+	"prefs-gravatar-use-gravatar-help": "Ved å slå på Gravatar-avatarer kan e-postadressa di bli synlig, og det kan være mulig å spore internettaktiviteten din. Les [$1 Gravatars personvernspolitikk] for mer informasjon."
+}
