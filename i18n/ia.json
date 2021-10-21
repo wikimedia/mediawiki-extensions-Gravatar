@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"gravatar-desc": "Adde avatares de Gravatar",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Avatar actual:",
+	"prefs-gravatar-use-gravatar-label": "Usar mi adresse de e-mail pro obtener un avatar de Gravatar.",
+	"prefs-gravatar-use-gravatar-help": "Le activation de avatares de Gravatar pote exponer tu adresse de e-mail e permitter de sequer tu activitate sur Internet. Lege le [$1 politica de confidentialitate de Gravatar] pro plus information."
+}
