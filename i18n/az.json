@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"NMW03"
+		]
+	},
+	"gravatar-desc": "Qravatar avatarları əlavə edir",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Hal-hazırkı avatar:",
+	"prefs-gravatar-use-gravatar-label": "Gravatar avatar almaq üçün e-poçt ünvanımdan istifadə et.",
+	"prefs-gravatar-use-gravatar-help": "Gravatar avatarlarını yandırmaq sizin elektron poçt ünvanınızı ifşa edə bilər və internet fəaliyyətinizi izləməyə imkan verə bilər. Ətraflı məlumat üçün [$1 Gravatar məxfilik siyasəti] oxuyun."
+}

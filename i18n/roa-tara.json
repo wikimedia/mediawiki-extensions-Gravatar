@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"gravatar-desc": "Aggiunge avatar de Gravatar",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Avatar de mò:",
+	"prefs-gravatar-use-gravatar-label": "Ause l'indirizze email mije pe pigghià 'nu avatar de Gravatar.",
+	"prefs-gravatar-use-gravatar-help": "Stoche abbilite le avatar de Gravatar ca ponne essere esposte sus a le indirizze email tune e permettene de traccià l'attività toje sus a indernètte. Lìgge le [$1 Gravatar regole d'a privacy] pe cchiù 'mbormaziune."
+}
