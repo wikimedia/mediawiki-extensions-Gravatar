@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"SkyEye FAST"
+		]
+	},
+	"gravatar-desc": "添加Gravatar头像",
+	"prefs-gravatar": "头像",
+	"prefs-gravatar-avatar-label": "当前头像：",
+	"prefs-gravatar-use-gravatar-label": "使用我的电子邮件地址以获取Gravatar头像",
+	"prefs-gravatar-use-gravatar-help": "启用Gravatar头像或许会暴露您的电子邮件地址，并容许您的互联网活动被跟踪。阅读[$1 Gravatar隐私政策]以了解更多信息。"
+}

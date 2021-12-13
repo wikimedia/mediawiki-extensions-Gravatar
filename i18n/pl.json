@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"gravatar-desc": "Dodaje awatary z serwisu Gravatar",
+	"prefs-gravatar": "Awatar",
+	"prefs-gravatar-avatar-label": "Obecny awatar:",
+	"prefs-gravatar-use-gravatar-label": "Użyj mojego adresu e-mail do uzyskania awataru z serwisu Gravatar.",
+	"prefs-gravatar-use-gravatar-help": "Włączając awatary dostarczane przez Gravatar możesz ujawnić swój adres e-mail i umożliwić tym samym śledzenie twojej aktywności w internecie. Przeczytaj [$1 politykę prywatności] Gravatara, aby dowiedzieć się więcej."
+}

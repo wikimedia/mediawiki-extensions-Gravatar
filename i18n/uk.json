@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT"
+		]
+	},
+	"gravatar-desc": "Додає аватари Gravatar",
+	"prefs-gravatar": "Аватар",
+	"prefs-gravatar-avatar-label": "Поточний аватар:",
+	"prefs-gravatar-use-gravatar-label": "Використовуйте мою електронну адресу, щоб отримати аватар Gravatar.",
+	"prefs-gravatar-use-gravatar-help": "Увімкнення аватарів Gravatar може виявити вашу адресу електронної пошти та дозволити відстежувати вашу активність в Інтернеті. Прочитайте [$1 політику конфіденційності Gravatar] для отримання додаткової інформації."
+}
