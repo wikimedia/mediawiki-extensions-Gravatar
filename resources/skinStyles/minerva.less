@@ -1,0 +1,12 @@
+// Over-specify to increase specificity, or the avatar will not show up.
+#minerva-user-menu-toggle#minerva-user-menu-toggle {
+	background-image: @gravatar-avatar-url;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	// Disable the existing icon.
+	&:before {
+		background-image: none;
+	}
+}

@@ -29,7 +29,8 @@
 			"skinStyles": {
 				"vector": "skinStyles/vector.less",
 				"monobook": "skinStyles/monobook.less",
-				"timeless": "skinStyles/timeless.less"
+				"timeless": "skinStyles/timeless.less",
+				"minerva": "skinStyles/minerva.less"
 			}
 		}
 	},
