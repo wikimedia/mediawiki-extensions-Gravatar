@@ -1,9 +1,9 @@
 <?php
 
-namespace MediaWiki\Extensions\Gravatar\ResourceLoader;
+namespace MediaWiki\Extension\Gravatar\ResourceLoader;
 
 use Config;
-use MediaWiki\Extensions\Gravatar\GravatarLookup;
+use MediaWiki\Extension\Gravatar\GravatarLookup;
 use MediaWiki\MediaWikiServices;
 use ResourceLoaderContext;
 use ResourceLoaderFileModule;

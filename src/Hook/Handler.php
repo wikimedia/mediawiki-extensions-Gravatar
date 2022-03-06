@@ -1,8 +1,8 @@
 <?php
 
-namespace MediaWiki\Extensions\Gravatar\Hook;
+namespace MediaWiki\Extension\Gravatar\Hook;
 
-use MediaWiki\Extensions\Gravatar\GravatarLookup;
+use MediaWiki\Extension\Gravatar\GravatarLookup;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use OutputPage;

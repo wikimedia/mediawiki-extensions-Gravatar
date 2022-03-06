@@ -1,16 +1,16 @@
 <?php
 
-namespace MediaWiki\Extensions\Gravatar\Test\Integration\ResourceLoader;
+namespace MediaWiki\Extension\Gravatar\Test\Integration\ResourceLoader;
 
 use HashConfig;
-use MediaWiki\Extensions\Gravatar\GravatarLookup;
-use MediaWiki\Extensions\Gravatar\ResourceLoader\GravatarResourceLoaderModule;
+use MediaWiki\Extension\Gravatar\GravatarLookup;
+use MediaWiki\Extension\Gravatar\ResourceLoader\GravatarResourceLoaderModule;
 use MediaWikiIntegrationTestCase;
 use ResourceLoaderContext;
 
 class GravatarResourceLoaderModuleTest extends MediaWikiIntegrationTestCase {
 	/**
-	 * @covers \MediaWiki\Extensions\Gravatar\ResourceLoader\GravatarResourceLoaderModule::getLessVars
+	 * @covers \MediaWiki\Extension\Gravatar\ResourceLoader\GravatarResourceLoaderModule::getLessVars
 	 */
 	public function testGetLessVars(): void {
 		$lookup = $this->createMock( GravatarLookup::class );
@@ -35,7 +35,7 @@ class GravatarResourceLoaderModuleTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\Gravatar\ResourceLoader\GravatarResourceLoaderModule::getDefinitionSummary
+	 * @covers \MediaWiki\Extension\Gravatar\ResourceLoader\GravatarResourceLoaderModule::getDefinitionSummary
 	 */
 	public function testGetDefinitionSummary(): void {
 		$lookup = $this->createMock( GravatarLookup::class );

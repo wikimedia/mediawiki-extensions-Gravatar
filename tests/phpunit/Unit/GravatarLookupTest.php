@@ -1,8 +1,8 @@
 <?php
 
-namespace MediaWiki\Extensions\Gravatar\Tests\Unit;
+namespace MediaWiki\Extension\Gravatar\Tests\Unit;
 
-use MediaWiki\Extensions\Gravatar\GravatarLookup;
+use MediaWiki\Extension\Gravatar\GravatarLookup;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserOptionsLookup;
 use MediaWikiUnitTestCase;
@@ -12,7 +12,7 @@ use function md5;
 
 class GravatarLookupTest extends MediaWikiUnitTestCase {
 	/**
-	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getCurrentUserAvatar
+	 * @covers \MediaWiki\Extension\Gravatar\GravatarLookup::getCurrentUserAvatar
 	 */
 	public function testGetCurrentUserAvatar(): void {
 		static::assertSame(
@@ -43,8 +43,8 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getImgAvatar
-	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getAvatarForUser
+	 * @covers \MediaWiki\Extension\Gravatar\GravatarLookup::getImgAvatar
+	 * @covers \MediaWiki\Extension\Gravatar\GravatarLookup::getAvatarForUser
 	 */
 	public function testGetImgAvatar(): void {
 		$lookup = $this->getLookup( true, '' );
@@ -56,8 +56,8 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getImgAvatar
-	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getAvatarForUser
+	 * @covers \MediaWiki\Extension\Gravatar\GravatarLookup::getImgAvatar
+	 * @covers \MediaWiki\Extension\Gravatar\GravatarLookup::getAvatarForUser
 	 */
 	public function testGetImgAvatarWithAltAndClass(): void {
 		$lookup = $this->getLookup( true, '' );
@@ -75,7 +75,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getAvatarForUser
+	 * @covers \MediaWiki\Extension\Gravatar\GravatarLookup::getAvatarForUser
 	 *
 	 * @dataProvider provideEmails
 	 *
@@ -104,7 +104,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::getAvatarForUser
+	 * @covers \MediaWiki\Extension\Gravatar\GravatarLookup::getAvatarForUser
 	 */
 	public function testGetAvatarForUserWithSize(): void {
 		$lookup = $this->getLookup( true, '' );
@@ -116,7 +116,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\Gravatar\GravatarLookup::lookupEmailAddress
+	 * @covers \MediaWiki\Extension\Gravatar\GravatarLookup::lookupEmailAddress
 	 *
 	 * @dataProvider provideEmailAndPreferences
 	 *

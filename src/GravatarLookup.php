@@ -1,6 +1,6 @@
 <?php
 
-namespace MediaWiki\Extensions\Gravatar;
+namespace MediaWiki\Extension\Gravatar;
 
 use Html;
 use MediaWiki\User\UserFactory;

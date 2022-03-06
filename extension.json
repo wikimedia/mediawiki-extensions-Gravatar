@@ -22,7 +22,7 @@
 				"mobile"
 			],
 			"group": "user",
-			"class": "MediaWiki\\Extensions\\Gravatar\\ResourceLoader\\GravatarResourceLoaderModule",
+			"class": "MediaWiki\\Extension\\Gravatar\\ResourceLoader\\GravatarResourceLoaderModule",
 			"styles": [
 				"ext.Gravatar.avatar.styles.less"
 			],
@@ -39,11 +39,11 @@
 		"remoteExtPath": "Gravatar/resources"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extensions\\Gravatar\\": "src/"
+		"MediaWiki\\Extension\\Gravatar\\": "src/"
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "MediaWiki\\Extensions\\Gravatar\\Hook\\Handler"
+			"class": "MediaWiki\\Extension\\Gravatar\\Hook\\Handler"
 		}
 	},
 	"Hooks": {
