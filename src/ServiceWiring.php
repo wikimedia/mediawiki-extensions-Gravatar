@@ -1,6 +1,7 @@
 <?php
 
-use MediaWiki\Extension\Gravatar\GravatarLookup;
+namespace MediaWiki\Extension\Gravatar;
+
 use MediaWiki\MediaWikiServices;
 
 return [
