@@ -1,4 +1,5 @@
 {
+	"name": "Gravatar",
 	"private": true,
 	"scripts": {
 		"test": "npm run lint",
