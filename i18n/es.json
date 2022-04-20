@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"DiegoAmbrocio"
+		]
+	},
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Avatar actual:",
+	"prefs-gravatar-use-gravatar-label": "Utiliza mi dirección de correo electrónico para conseguir un avatar de Gravatar.",
+	"prefs-gravatar-use-gravatar-help": "Activar los avatares de Gravatar podría exponer tu dirección de correo electrónico y permitir el seguimiento de tu actividad en Internet. Lee la [política de privacidad de Gravatar  $1] para obtener más información."
+}
