@@ -5,8 +5,8 @@ namespace MediaWiki\Extension\Gravatar\Test\Integration\ResourceLoader;
 use HashConfig;
 use MediaWiki\Extension\Gravatar\GravatarLookup;
 use MediaWiki\Extension\Gravatar\ResourceLoader\GravatarResourceLoaderModule;
+use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;
 use MediaWikiIntegrationTestCase;
-use ResourceLoaderContext;
 
 class GravatarResourceLoaderModuleTest extends MediaWikiIntegrationTestCase {
 	/**
@@ -53,8 +53,7 @@ class GravatarResourceLoaderModuleTest extends MediaWikiIntegrationTestCase {
 			] )
 		);
 
-		list( , , $summary ) = $module->getDefinitionSummary( $this->createMock(
-			ResourceLoaderContext::class ) );
+		list( , , $summary ) = $module->getDefinitionSummary( $this->createMock( ResourceLoaderContext::class ) );
 
 		static::assertArrayHasKey( 'AvatarUrl', $summary );
 		static::assertSame( '//avatarprovider.com/avatarpath', $summary['AvatarUrl'] );
