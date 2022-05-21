@@ -132,8 +132,8 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 		$lookup = TestingAccessWrapper::newFromObject( $this->getLookup( $optedIn, $hasEmail ? 'test@test.com' : '' ) );
 
 		static::assertSame(
-			$lookup->lookupEmailAddress( $this->createMock( User::class ) ),
-			$expected
+			$expected,
+			$lookup->lookupEmailAddress( $this->createMock( User::class ) )
 		);
 	}
 
