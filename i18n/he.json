@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"gravatar-desc": "הוספת תמונות מייצגת של Gravatar",
+	"prefs-gravatar": "תמונת משתמש",
+	"prefs-gravatar-avatar-label": "תמונה מייצגת נוכחית:",
+	"prefs-gravatar-use-gravatar-label": "להשתמש בכתובת הדוא\"ל שלי כדי לקבל תמונה מייצגת מ־Gravatar.",
+	"prefs-gravatar-use-gravatar-help": "הפעלת תמונות משתמש מ־Gravatar יכולה לחשוף את הדוא\"ל שלך ולאפשר מעקב אחר פעילות האינטרנט שלך. יש לקרוא את [$1 מדיניות הפרטיות של Gravatar] למידע נוסף."
+}
