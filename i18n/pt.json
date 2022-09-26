@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"gravatar-desc": "Adiciona avatares do Gravatar",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Avatar atual:",
+	"prefs-gravatar-use-gravatar-label": "Usar o meu endereço de correio eletrónico para obter um avatar do Gravatar.",
+	"prefs-gravatar-use-gravatar-help": "Ativar os avatares do Gravatar pode expor o seu endereço de correio eletrónico e permitir o rastreamento da sua atividade na internet. Para obter mais informações consulte a [$1 política de privacidade do Gravatar]."
+}
