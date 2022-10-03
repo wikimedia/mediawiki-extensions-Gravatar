@@ -12,20 +12,15 @@ use function trim;
 use function wfAppendQuery;
 
 class GravatarLookup {
-	/** @var UserFactory */
-	private $userFactory;
+	private UserFactory $userFactory;
 
-	/** @var UserOptionsLookup */
-	private $userOptionsLookup;
+	private UserOptionsLookup $userOptionsLookup;
 
-	/** @var string */
-	private $gravatarServer;
+	private string $gravatarServer;
 
-	/** @var string */
-	private $defaultAvatar;
+	private string $defaultAvatar;
 
-	/** @var string */
-	private $acceptedAvatarRating;
+	private string $acceptedAvatarRating;
 
 	/**
 	 * @codeCoverageIgnore

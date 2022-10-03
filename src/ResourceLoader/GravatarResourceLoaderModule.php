@@ -15,8 +15,7 @@ class GravatarResourceLoaderModule extends ResourceLoaderFileModule {
 	/** @inheritDoc */
 	protected $origin = self::ORIGIN_CORE_INDIVIDUAL;
 
-	/** @var GravatarLookup */
-	private $gravatarLookup;
+	private GravatarLookup $gravatarLookup;
 
 	/**
 	 * @inheritDoc
@@ -38,7 +37,7 @@ class GravatarResourceLoaderModule extends ResourceLoaderFileModule {
 
 		$this->gravatarLookup = $gravatarLookup ?? MediaWikiServices::getInstance()
 				->getService( 'GravatarLookup' );
-		$gravatarConfig = $gravatarConfig ?? MediaWikiServices::getInstance()->getConfigFactory()
+		$gravatarConfig ??= MediaWikiServices::getInstance()->getConfigFactory()
 				->makeConfig( 'Gravatar' );
 		$this->skinStyles = array_diff_key(
 			$this->skinStyles,
