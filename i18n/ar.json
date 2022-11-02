@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"gravatar-desc": "يضيف صور Gravatar الرمزية",
+	"prefs-gravatar": "أفاتر",
+	"prefs-gravatar-avatar-label": "الصورة الرمزية الحالية:",
+	"prefs-gravatar-use-gravatar-label": "استخدم عنوان البريد الإلكتروني الخاص بي للحصول على صورة Gravatar الرمزية.",
+	"prefs-gravatar-use-gravatar-help": "قد يؤدي تمكين الصور الرمزية لـ Gravatar إلى كشف عنوان بريدك الإلكتروني والسماح بتتبع نشاطك على الإنترنت. اقرأ [سياسة خصوصية Gravatar $1 ] لمزيد من المعلومات."
+}
