@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"gravatar-desc": "Doda avatarje Gravatar",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Trenutni avatar:",
+	"prefs-gravatar-use-gravatar-label": "Za pridobitev avatarja Gravatar uporabi moj e-poštni naslov.",
+	"prefs-gravatar-use-gravatar-help": "Če omogočite avatarje Gravatar, se lahko razkrije vaš e-poštni naslov in omogoči sledenje vaši internetni dejavnosti. Za več informacij preberite [$1 Pravilnik o zasebnosti Gravatarja]."
+}
