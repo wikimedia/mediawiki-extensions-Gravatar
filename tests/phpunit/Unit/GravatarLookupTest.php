@@ -95,7 +95,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	 *
 	 * @return string[][]
 	 */
-	public function provideEmails(): array {
+	public static function provideEmails(): array {
 		return [
 			'Uppercase email' => [ 'TEST@TEST.COM' ],
 			'Email with trailing whitespace' => [ 'test@test.com     ' ],
@@ -142,7 +142,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	 *
 	 * @return array[]
 	 */
-	public function provideEmailAndPreferences(): array {
+	public static function provideEmailAndPreferences(): array {
 		return [
 			'Not opted-in, has email' => [ false, true, null ],
 			'Opted-in, no email' => [ true, false, null ],
