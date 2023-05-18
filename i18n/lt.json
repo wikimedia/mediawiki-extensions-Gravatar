@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"gravatar-desc": "Prideda Gravatar avatarus",
+	"prefs-gravatar": "Avataras",
+	"prefs-gravatar-avatar-label": "Dabartinis avataras:",
+	"prefs-gravatar-use-gravatar-label": "Naudoti mano el. pašto adresą, kad gautumėte Gravatar avatarą.",
+	"prefs-gravatar-use-gravatar-help": "Įjungus Gravatar avatarus gali būti atskleistas jūsų el. pašto adresas ir galima stebėti jūsų veiklą internete. Norėdami gauti daugiau informacijos, skaitykite [$1 Gravatar privatumo politiką]."
+}
