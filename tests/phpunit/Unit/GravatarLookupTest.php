@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\Gravatar\Tests\Unit;
 
 use MediaWiki\Extension\Gravatar\GravatarLookup;
+use MediaWiki\Html\Html;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserOptionsLookup;
 use MediaWikiUnitTestCase;
@@ -15,8 +16,15 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	 * @covers \MediaWiki\Extension\Gravatar\GravatarLookup::getCurrentUserAvatar
 	 */
 	public function testGetCurrentUserAvatar(): void {
-		static::assertSame(
-			'<div id="id" class="testclass ext-gravatar-avatar ext-gravatar-user-avatar">Content</div>',
+		$this->assertHTMLEquals(
+			Html::element(
+				'div',
+				[
+					'id' => 'id',
+					'class' => 'testclass ext-gravatar-avatar ext-gravatar-user-avatar'
+				],
+				'Content'
+			),
 			GravatarLookup::getCurrentUserAvatar(
 				[ 'id' => 'id', 'class' => 'testclass' ],
 				'Content'
@@ -49,8 +57,15 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	public function testGetImgAvatar(): void {
 		$lookup = $this->getLookup( true, '' );
 
-		static::assertSame(
-			'<img src="//test.com/avatar/?r=g&amp;d=default" alt="avatar" class="ext-gravatar-avatar-image"/>',
+		$this->assertHTMLEquals(
+			Html::element(
+				'img',
+				[
+					'src' => '//test.com/avatar/?r=g&d=default',
+					'alt' => 'avatar',
+					'class' => 'ext-gravatar-avatar-image'
+				]
+			),
 			$lookup->getImgAvatar( $this->createMock( User::class ) )
 		);
 	}
@@ -62,8 +77,15 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	public function testGetImgAvatarWithAltAndClass(): void {
 		$lookup = $this->getLookup( true, '' );
 
-		static::assertSame(
-			'<img src="//test.com/avatar/?r=g&amp;d=default" alt="alt" class="testclass ext-gravatar-avatar-image"/>',
+		$this->assertHTMLEquals(
+			Html::element(
+				'img',
+				[
+					'src' => '//test.com/avatar/?r=g&d=default',
+					'alt' => 'alt',
+					'class' => 'testclass ext-gravatar-avatar-image'
+				]
+			),
 			$lookup->getImgAvatar(
 				$this->createMock( User::class ),
 				[
