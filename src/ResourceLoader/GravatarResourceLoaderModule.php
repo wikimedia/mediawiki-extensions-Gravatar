@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\Gravatar\ResourceLoader;
 
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\Extension\Gravatar\GravatarLookup;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;

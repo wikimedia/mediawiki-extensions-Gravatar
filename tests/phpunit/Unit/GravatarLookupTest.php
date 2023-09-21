@@ -4,10 +4,10 @@ namespace MediaWiki\Extension\Gravatar\Tests\Unit;
 
 use MediaWiki\Extension\Gravatar\GravatarLookup;
 use MediaWiki\Html\Html;
+use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserOptionsLookup;
 use MediaWikiUnitTestCase;
-use User;
 use Wikimedia\TestingAccessWrapper;
 use function md5;
 

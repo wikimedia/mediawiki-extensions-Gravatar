@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\Gravatar;
 
-use Html;
+use MediaWiki\Html\Html;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\User\UserOptionsLookup;

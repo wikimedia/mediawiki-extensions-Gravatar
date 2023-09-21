@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\Gravatar\Test\Integration\ResourceLoader;
 
-use HashConfig;
+use MediaWiki\Config\HashConfig;
 use MediaWiki\Extension\Gravatar\GravatarLookup;
 use MediaWiki\Extension\Gravatar\ResourceLoader\GravatarResourceLoaderModule;
 use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;

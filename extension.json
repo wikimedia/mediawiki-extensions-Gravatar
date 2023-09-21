@@ -8,7 +8,7 @@
 	"namemsg": "gravatar-extensionname",
 	"license-name": "MIT",
 	"requires": {
-		"MediaWiki": ">=1.35.0"
+		"MediaWiki": ">=1.41.0"
 	},
 	"MessagesDirs": {
 		"Gravatar": [
@@ -57,7 +57,7 @@
 		"src/ServiceWiring.php"
 	],
 	"ConfigRegistry": {
-		"Gravatar": "GlobalVarConfig::newInstance"
+		"Gravatar": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
 	},
 	"config": {
 		"GravatarServer": {
