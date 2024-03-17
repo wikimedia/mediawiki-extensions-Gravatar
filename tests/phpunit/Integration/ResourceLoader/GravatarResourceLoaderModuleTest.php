@@ -53,7 +53,7 @@ class GravatarResourceLoaderModuleTest extends MediaWikiIntegrationTestCase {
 			] )
 		);
 
-		list( , , $summary ) = $module->getDefinitionSummary( $this->createMock( ResourceLoaderContext::class ) );
+		[ , , $summary ] = $module->getDefinitionSummary( $this->createMock( ResourceLoaderContext::class ) );
 
 		static::assertArrayHasKey( 'AvatarUrl', $summary );
 		static::assertSame( '//avatarprovider.com/avatarpath', $summary['AvatarUrl'] );
