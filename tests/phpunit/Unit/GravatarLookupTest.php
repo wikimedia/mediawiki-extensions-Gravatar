@@ -6,6 +6,7 @@ use MediaWiki\Extension\Gravatar\GravatarLookup;
 use MediaWiki\Html\Html;
 use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
+use MediaWiki\User\UserIdentity;
 use MediaWiki\User\UserOptionsLookup;
 use MediaWikiUnitTestCase;
 use Wikimedia\TestingAccessWrapper;
@@ -66,7 +67,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 					'class' => 'ext-gravatar-avatar-image'
 				]
 			),
-			$lookup->getImgAvatar( $this->createMock( User::class ) )
+			$lookup->getImgAvatar( $this->createMock( UserIdentity::class ) )
 		);
 	}
 
@@ -87,7 +88,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 				]
 			),
 			$lookup->getImgAvatar(
-				$this->createMock( User::class ),
+				$this->createMock( UserIdentity::class ),
 				[
 					'alt' => 'alt',
 					'class' => [ 'testclass' ]
@@ -108,7 +109,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 
 		static::assertSame(
 			'//test.com/avatar/' . md5( 'test@test.com' ) . '?r=g&d=default',
-			$lookup->getAvatarForUser( $this->createMock( User::class ) )
+			$lookup->getAvatarForUser( $this->createMock( UserIdentity::class ) )
 		);
 	}
 
@@ -133,7 +134,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 
 		static::assertSame(
 			'//test.com/avatar/?r=g&d=default&s=32',
-			$lookup->getAvatarForUser( $this->createMock( User::class ), 32 )
+			$lookup->getAvatarForUser( $this->createMock( UserIdentity::class ), 32 )
 		);
 	}
 
@@ -151,11 +152,12 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 		bool $hasEmail,
 		?string $expected
 	): void {
+		/** @var GravatarLookup $lookup */
 		$lookup = TestingAccessWrapper::newFromObject( $this->getLookup( $optedIn, $hasEmail ? 'test@test.com' : '' ) );
 
 		static::assertSame(
 			$expected,
-			$lookup->lookupEmailAddress( $this->createMock( User::class ) )
+			$lookup->lookupEmailAddress( $this->createMock( UserIdentity::class ) )
 		);
 	}
 
