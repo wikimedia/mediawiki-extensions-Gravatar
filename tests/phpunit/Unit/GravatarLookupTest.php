@@ -17,7 +17,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	 * @covers \MediaWiki\Extension\Gravatar\GravatarLookup::getCurrentUserAvatar
 	 */
 	public function testGetCurrentUserAvatar(): void {
-		$this->assertHTMLEquals(
+		$this->assertSame(
 			Html::element(
 				'div',
 				[
@@ -58,7 +58,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	public function testGetImgAvatar(): void {
 		$lookup = $this->getLookup( true, '' );
 
-		$this->assertHTMLEquals(
+		$this->assertSame(
 			Html::element(
 				'img',
 				[
@@ -78,7 +78,7 @@ class GravatarLookupTest extends MediaWikiUnitTestCase {
 	public function testGetImgAvatarWithAltAndClass(): void {
 		$lookup = $this->getLookup( true, '' );
 
-		$this->assertHTMLEquals(
+		$this->assertSame(
 			Html::element(
 				'img',
 				[
