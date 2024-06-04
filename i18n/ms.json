@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stress 043"
+		]
+	},
+	"gravatar-desc": "Tambah avatar Gravatar",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Avatar sekarang:",
+	"prefs-gravatar-use-gravatar-label": "Guna alamat emel saya untuk dapatkan avatar Gravatar.",
+	"prefs-gravatar-use-gravatar-help": "Pengaktifan avatar Gravatar mungkin akan mendedahkan alamat emel anda dan membenarkan penjejakan aktiviti internet anda. Baca [$1 polisi privasi Gravatar] untuk maklumat lanjut."
+}
