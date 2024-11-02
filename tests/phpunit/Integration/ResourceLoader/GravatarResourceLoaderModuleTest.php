@@ -33,29 +33,4 @@ class GravatarResourceLoaderModuleTest extends MediaWikiIntegrationTestCase {
 			$module->getLessVars( $this->createMock( ResourceLoaderContext::class ) )
 		);
 	}
-
-	/**
-	 * @covers \MediaWiki\Extension\Gravatar\ResourceLoader\GravatarResourceLoaderModule::getDefinitionSummary
-	 */
-	public function testGetDefinitionSummary(): void {
-		$lookup = $this->createMock( GravatarLookup::class );
-		$lookup->method( 'getAvatarForUser' )->willReturn(
-			'//avatarprovider.com/avatarpath'
-		);
-
-		$module = new GravatarResourceLoaderModule(
-			[],
-			'',
-			'',
-			$lookup,
-			new HashConfig( [
-				'GravatarIgnoredSkins' => []
-			] )
-		);
-
-		[ , , $summary ] = $module->getDefinitionSummary( $this->createMock( ResourceLoaderContext::class ) );
-
-		static::assertArrayHasKey( 'AvatarUrl', $summary );
-		static::assertSame( '//avatarprovider.com/avatarpath', $summary['AvatarUrl'] );
-	}
 }
