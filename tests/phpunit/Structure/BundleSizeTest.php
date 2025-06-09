@@ -19,7 +19,7 @@ class BundleSizeTest extends BundleSizeTestBase {
 	}
 
 	/** @inheritDoc */
-	public function getBundleSizeConfig(): string {
+	public static function getBundleSizeConfigData(): string {
 		return __DIR__ . '/../../../bundlesize.config.json';
 	}
 }
