@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"gravatar-desc": "د Gravatar ځان‌بڼې ورگډوي",
+	"prefs-gravatar": "ځان‌بڼه",
+	"prefs-gravatar-avatar-label": "اوسنۍ ځان‌بڼه:",
+	"prefs-gravatar-use-gravatar-label": "د Gravatar ترلاسه‌کولو لپاره زما برېښليک پته وکاروئ.",
+	"prefs-gravatar-use-gravatar-help": "د Gravatar ځان‌بڼو چارنول ښايي ستاو برېښليک پته ښکاره کړي او ستاسو د اينټرنېټ چارې څارلو ته اجازه ورکړي. د نورو مالوماتو لپاره د [$1 Gravatar پټنتيا تگلار] ولولئ."
+}
