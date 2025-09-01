@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"gravatar-desc": "Engade avatares de Gravatar",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Avatar actual:",
+	"prefs-gravatar-use-gravatar-label": "Utilizar o meu enderezo de correo electrónico para obter un avatar de Gravatar.",
+	"prefs-gravatar-use-gravatar-help": "A activación dos avatares de Gravatar podería expoñer o teu enderezo de correo electrónico e permitir o seguimento da túa actividade en Internet. Consulta as [$1 normas de protección de datos de Gravatar] para obteres máis información."
+}
