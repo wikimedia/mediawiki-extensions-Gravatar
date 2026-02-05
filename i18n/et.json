@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rivoz"
+		]
+	},
+	"gravatar-desc": "Lisab Gravatar avatarid",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Praegune avatar:",
+	"prefs-gravatar-use-gravatar-label": "Gravatari avatari saamiseks kasuta minu e-posti aadressi.",
+	"prefs-gravatar-use-gravatar-help": "Gravatari avataride lubamine võib paljastada teie e-posti aadressi ja võimaldada teie internetitegevuse jälgimist. Lisateabe saamiseks loe [$1 Gravatar privaatsuspoliitikat]."
+}
