@@ -6,8 +6,8 @@ use MediaWiki\Extension\Gravatar\GravatarLookup;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
+use MediaWiki\Skin\Skin;
 use MediaWiki\User\User;
-use Skin;
 
 class Handler implements BeforePageDisplayHook, GetPreferencesHook {
 	/**
