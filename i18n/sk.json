@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"gravatar-desc": "Pridáva avatary zo služby Gravatar",
+	"prefs-gravatar": "Avatar",
+	"prefs-gravatar-avatar-label": "Aktuálny avatar:",
+	"prefs-gravatar-use-gravatar-label": "Použiť moju e-mailovú adresu na získanie avatara zo služby Gravatar.",
+	"prefs-gravatar-use-gravatar-help": "Zapnutie avatarov Gravatar môže odhaliť vašu e-mailovú adresu a umožniť sledovanie vašej aktivity na internete. Viac informácií nájdete v [$1 zásadách ochrany súkromia služby Gravatar]."
+}
